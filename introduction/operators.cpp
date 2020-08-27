@@ -4,7 +4,7 @@ using namespace std;
 
 int main(void)
 {
-    //declaring a and b as constants
+    //declaring a, b and c as constants
     const int a = 10;
     const int b = 2;
     const double c = 3;
