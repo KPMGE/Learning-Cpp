@@ -15,7 +15,9 @@ int main(void)
         cout << "i = " << i << endl;
 
     cout << endl;
+
     //second case
+    //OBS: we must define the variable inside the for loop
     for(int var : array)
         cout << "var = " << var << endl;
 
