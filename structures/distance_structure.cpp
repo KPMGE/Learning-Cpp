@@ -2,12 +2,11 @@
 #include <cmath>
 using namespace std;
 
-struct point 
+struct Point 
 {
     float x;
     float y;
 };
-typedef struct point Point;
 
 float calculate_distance(Point* p1, Point* p2);
 
