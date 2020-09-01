@@ -21,7 +21,7 @@ class Circle
 
     public:
         //assign data to private members
-        void getData(Point* c, float r)
+        Circle(Point* c, float r)
         {
             center.x = c->x;
             center.y = c->y;
@@ -55,7 +55,6 @@ class Circle
 
 int main(void)
 {
-    Circle circ;
     Point c, p;
     float r;
     
@@ -65,8 +64,8 @@ int main(void)
     cout << "Enter radius of the circle: ";
     cin >> r;
 
-    //assign data 
-    circ.getData(&c, r);
+    //initializing circ
+    Circle circ(&p, r);
 
     //calculating and displaying area an volume
     cout << "The area of the circle is: " << circ.calculateArea() << endl; 
