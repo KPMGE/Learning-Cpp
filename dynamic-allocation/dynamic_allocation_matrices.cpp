@@ -20,8 +20,8 @@ int main(void)
 
     //releasing allocated memory
     for(int i = 0; i < row; i++)
-        free(allocatedMatrix[i]);
-    free(allocatedMatrix);
+        delete allocatedMatrix[i];
+    delete allocatedMatrix;
 
     return 0;
 }
